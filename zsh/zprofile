@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+[[ -f "$HOME/.zprofile.local" ]] && source "$HOME/.zprofile.local"
+[[ -f "$DOTFILE_DIR/zsh/zshrc" && ! -o interactive ]] && source "$DOTFILE_DIR/zsh/zshrc"

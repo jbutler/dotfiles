@@ -1,0 +1,5 @@
+set nocompatible
+
+for rcfile in split(globpath(expand('$VIM_RUNTIME_DIR'), '*.vim'))
+    execute('source ' . rcfile)
+endfor
