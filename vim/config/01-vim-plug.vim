@@ -13,6 +13,8 @@ call plug#begin(expand('$VIM_BUNDLE_DIR'))
 
     " navigation, productivity
     Plug 'easymotion/vim-easymotion'
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
     Plug 'terryma/vim-multiple-cursors'
 
     " ui, syntax highlighting

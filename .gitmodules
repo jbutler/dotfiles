@@ -7,3 +7,6 @@
 [submodule "zsh/oh-my-zsh"]
 	path = zsh/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "zsh/custom/powerlevel9k"]
+	path = zsh/custom/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k
