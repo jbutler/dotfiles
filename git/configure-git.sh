@@ -12,3 +12,6 @@ $gcg user.name 'Joe Butler'
 # is small. Make `less` behave similarly to `cat` if
 # the output can fit on one screen, else paginate normally
 $gcg core.pager "less -FRX"
+
+# Store github access token on the filesystem
+$gcg credential.helper store
