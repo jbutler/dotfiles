@@ -1,9 +1,14 @@
 #!/bin/bash
 
+# This is a baseline gitconfig. Things like email
+# should be added in separate machine specific files
+
 gcg='git config --global'
 
 $gcg user.name 'Joe Butler'
 
-# Disable obnoxious output pagination by setting
-# the default pager to the `cat` command
-$gcg core.pager cat
+# Default git pagination settings are less than ideal
+# for things like `git branch` if the size of the output
+# is small. Make `less` behave similarly to `cat` if
+# the output can fit on one screen, else paginate normally
+$gcg core.pager "less -FRX"
