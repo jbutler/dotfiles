@@ -2,7 +2,6 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# TODO: Get vim bindings for this
 set $mod Mod4
 set $left j
 set $down k
@@ -184,3 +183,8 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Take screenshot of active window
+bindsym --release Shift+Print exec "screenshot -active"
+# Take screenshot of full screen
+bindsym --release Print exec "screenshot -full"
