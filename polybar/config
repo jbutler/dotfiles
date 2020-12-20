@@ -50,7 +50,7 @@ font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
-modules-left = i3
+modules-left = i3 github
 modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu eth temperature date powermenu
 
 tray-position = right
@@ -58,6 +58,13 @@ tray-padding = 2
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/github]
+type = internal/github
+token = ${file:$HOME/.github/access.token}
+user = jbutler
+empty-notifications = true
+interval = 30
 
 [module/xwindow]
 type = internal/xwindow
