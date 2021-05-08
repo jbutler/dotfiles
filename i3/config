@@ -178,9 +178,6 @@ bindsym $mod+r mode "resize"
 # Launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh default
 
-# Redshift
-exec --no-startup-id redshift-gtk
-
 # Take screenshot of active window
 bindsym --release Shift+Print exec "screenshot -active"
 # Take screenshot of full screen
