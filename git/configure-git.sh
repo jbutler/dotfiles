@@ -26,6 +26,9 @@ $gcg credential.helper store
 # Global git ignore
 $gcg core.excludesfile ~/.gitignore_global
 
+# Solve racial inequality
+$gcg init.defaultBranch main
+
 # Aliases
 $gcg alias.amend "commit --amend --no-edit"
 $gcg alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
