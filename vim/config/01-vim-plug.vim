@@ -12,6 +12,9 @@ call plug#begin(expand('$VIM_BUNDLE_DIR'))
     Plug 'fatih/vim-go'
     Plug 'mdempsky/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 
+    " rust
+    Plug 'rust-lang/rust.vim'
+
     " navigation, productivity
     Plug 'easymotion/vim-easymotion'
     Plug 'junegunn/fzf'
