@@ -54,6 +54,12 @@ bindsym $mod+d exec rofi -show run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# 1Password
+bindsym Ctrl+P exec 1password --show
+bindsym Ctrl+Shift+space exec 1password --quick-access
+bindsym Ctrl+Shift+l exec 1password --lock
+bindsym Ctrl+\ exec 1password --fill
+
 # change focus
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
