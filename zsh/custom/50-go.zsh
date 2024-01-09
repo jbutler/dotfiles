@@ -1,4 +1,6 @@
-export GOPATH="$HOME/go"
+#!/usr/bin/env zsh
 
-# Add Go utilities to PATH
-pathmunge "$GOPATH/bin"
+if [ -f "$HOME/go" ]; then
+    export GOPATH="$HOME/go"
+    pathmunge "$GOPATH/bin"
+fi
