@@ -1,3 +1,3 @@
 #!/usr/bin/env zsh
 
-[[ -d "$HOME/.cargo" ]] && source "$HOME/.cargo/env"
+[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
