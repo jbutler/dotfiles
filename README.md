@@ -3,7 +3,7 @@
 ### Install
 
 ```
-git clone ssh://github.com/jbutler/dotfiles ~/.dotfiles
+git clone git@github.com:jbutler/dotfiles.git
 cd ~/.dotfiles
 git submodule update --init --recursive
 ```
