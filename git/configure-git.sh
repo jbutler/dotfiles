@@ -24,15 +24,18 @@ $gcg core.pager "less -FRX"
 $gcg credential.helper store
 
 # Global git ignore
-$gcg core.excludesfile ~/.gitignore_global
+$gcg core.excludesfile ~/.gitignore
 
 # Solve racial inequality
 $gcg init.defaultBranch main
 
-#Misc
+# Misc
 $gcg push.autoSetupRemote true
 
 # Aliases
 $gcg alias.amend "commit --amend --no-edit"
 $gcg alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
 $gcg alias.nah   "!git reset --hard && git clean -df"
+
+# Merge gitignore template files into single global gitignore
+cat $(dirname "$0")/gitignore/* > ~/.gitignore
