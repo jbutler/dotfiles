@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-if [ -f "$HOME/go" ]; then
-    export GOPATH="$HOME/go"
+if  command -v go &>/dev/null; then
+    export GOPATH="$XDG_DATA_HOME/go"
     pathmunge "$GOPATH/bin"
 fi
