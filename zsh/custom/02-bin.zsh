@@ -1,2 +1,3 @@
-pathmunge "$DOTFILE_DIR/bin"
+#!/usr/bin/env zsh
+
 pathmunge "$HOME/.local/bin"

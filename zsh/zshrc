@@ -1,8 +1,7 @@
-#!/usr/bin/env zsh
-
 [[ -f "$HOME/.zshrc.local.pre" ]] && source "$HOME/.zshrc.local.pre"
 
-source $ZSH/oh-my-zsh.sh
+ZSH_CUSTOM="$DOTFILE_DIR/zsh/custom"
+. $DOTFILE_DIR/zsh/oh-my-zsh/oh-my-zsh.sh
 
 [[ -f "$HOME/.zshrc.local.post" ]] && source "$HOME/.zshrc.local.post"
 

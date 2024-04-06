@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 function pathmunge() {
     if ! echo $PATH | grep -E -q "(^|:)$1($|:)"; then
         if [ "$2" = "after" ] ; then
