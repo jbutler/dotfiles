@@ -2,3 +2,4 @@ DOTFILE_DIR="$HOME/.dotfiles"
 ZDOTDIR="$HOME/.config/zsh"
 
 [[ -f "$HOME/.zshenv.local" ]] && source "$HOME/.zshenv.local"
+[[ -f "$ZDOTDIR/.zshenv.local" ]] && source "$ZDOTDIR/.zshenv.local"
