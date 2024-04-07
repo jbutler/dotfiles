@@ -16,3 +16,4 @@ elif [[ -n "vim_path" ]]; then
 fi
 
 export VISUAL="$EDITOR"
+export LESSHISTFILE="$XDG_STATE_HOME/less/history"
