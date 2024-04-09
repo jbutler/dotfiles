@@ -1,9 +1,9 @@
-[[ -f "$HOME/.zshrc.local.pre" ]] && source "$HOME/.zshrc.local.pre"
+[[ -f "$ZDOTDIR/.zshrc.local.pre" ]] && source "$ZDOTDIR/.zshrc.local.pre"
 
 ZSH_CUSTOM="$DOTFILE_DIR/zsh/custom"
 . $DOTFILE_DIR/zsh/oh-my-zsh/oh-my-zsh.sh
 
-[[ -f "$HOME/.zshrc.local.post" ]] && source "$HOME/.zshrc.local.post"
+[[ -f "$ZDOTDIR/.zshrc.local.post" ]] && source "$ZDOTDIR/.zshrc.local.post"
 
 # Clear status code from anything else that may have executed previously
 return 0
