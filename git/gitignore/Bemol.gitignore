@@ -1,0 +1,23 @@
+### Bemol
+
+# C/C++
+.vscode/c_cpp_properties.json
+
+# Java
+.classpath
+.factorypath
+.project
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.jdt.apt.core.prefs
+
+# Kotlin
+kotlinLspClasspath.sh
+
+# Python
+pyrightconfig.json
+.vscode/settings.json
+.env
+
+# Ruby
+.solargraph.yml
+
