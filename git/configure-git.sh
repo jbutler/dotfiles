@@ -25,7 +25,11 @@ gcg core.pager "less -FRX"
 gcg credential.helper store
 
 # Global git ignore
-gcg core.excludesfile ~/.gitignore
+if [ -v XDG_CONFIG_HOME ]; then
+    gcg core.excludesfile $XDG_CONFIG_HOME/git/ignore
+else
+    gcg core.excludesfile $HOME/.gitignore
+fi
 
 # Solve racial inequality
 gcg init.defaultBranch main
