@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 if which nvim >/dev/null 2>&1; then
     nvim_path="$(which nvim)"

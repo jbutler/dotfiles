@@ -1,4 +1,4 @@
-#!/usr/env/bin zsh
+#!/bin/sh
 
 # brew
 pathmunge "/opt/homebrew/bin"

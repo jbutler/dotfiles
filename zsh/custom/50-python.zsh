@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 # If python2 isn't installed, add python alias for python3
 if ! which python >/dev/null 2>&1; then

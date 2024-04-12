@@ -1,3 +1,3 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 pathmunge "$HOME/.local/bin"

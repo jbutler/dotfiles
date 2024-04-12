@@ -1,3 +1,3 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 ZSH_THEME="robbyrussell"

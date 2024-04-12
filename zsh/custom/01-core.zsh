@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 munge() {
     if [ -z "$1" ]; then
