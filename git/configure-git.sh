@@ -4,15 +4,14 @@ YELLOW='\033[0;33m'
 NC='\033[0m' # No Color
 
 gcg() {
-    git config --global $1 $2
+    git config --global "$1" "$2"
 }
 
 gcg user.name 'Joe Butler'
-if [ "$GIT_EMAIL" = "" ];
-then
+if [ "$GIT_EMAIL" = "" ]; then
     echo -e "${YELLOW}[WARN] GIT_EMAIL variable is not defined. Will not set git user.email${NC}"
 else
-    gcg user.email $GIT_EMAIL
+    gcg user.email "$GIT_EMAIL"
 fi
 
 # Default git pagination settings are less than ideal
@@ -21,11 +20,8 @@ fi
 # the output can fit on one screen, else paginate normally
 gcg core.pager "less -FRX"
 
-# Store github access token on the filesystem
-gcg credential.helper store
-
 # Global git ignore
-if [ -v XDG_CONFIG_HOME ]; then
+if [ -n "$XDG_CONFIG_HOME" ]; then
     gcg core.excludesfile $XDG_CONFIG_HOME/git/ignore
 else
     gcg core.excludesfile $HOME/.gitignore
