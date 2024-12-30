@@ -2,15 +2,24 @@
 
 munge() {
     if [ -z "$1" ]; then
+        # Existing path is empty, just return the new segment
         echo "$2"
-    elif ! echo "$1" | grep -E -q "(^|:)$2($|:)"; then
-        if [ "$3" = "after" ] ; then
-            echo "$1:$2"
-        else
-            echo "$2:$1"
-        fi
     else
-        echo "$1"
+        # Add colons around $1 (current PATH) for easier matching
+        case ":$1:" in
+            *:"$2":*)
+                # New segment is already present, do nothing
+                echo "$1"
+                ;;
+            *)
+                # New segment is not present, add it
+                if [ "$3" = "after" ]; then
+                    echo "$1:$2"
+                else
+                    echo "$2:$1"
+                fi
+                ;;
+        esac
     fi
 }
 
