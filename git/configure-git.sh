@@ -51,7 +51,7 @@ gcg push.autoSetupRemote true
 gcg alias.amend "commit --amend --no-edit"
 gcg alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
 gcg alias.nah   "! git reset --hard && git clean -df"
-gcg alias.gc    "clean . -xdf --exclude='*.iml'"
+gcg alias.dc    "clean . -xdf --exclude='*.iml'"
 
 # Merge gitignore template files into single global gitignore
 cat $(dirname "$0")/gitignore/* > ~/.config/git/ignore
